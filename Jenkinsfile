@@ -37,7 +37,9 @@ pipeline
         {
             steps 
             {
-                // ansiblePlaybook(credentialsId: '/home/ubuntu/.ssh/private_key', inventory: '/home/ubuntu/inventory.yaml', playbook: '/home/ubuntu/playbook.yaml')           
+                // ansiblePlaybook(credentialsId: '/home/ubuntu/.ssh/private_key', inventory: '/home/ubuntu/inventory.yaml', playbook: '/home/ubuntu/playbook.yaml')        
+                sh 'pwd'
+                sh 'ls /home/ubuntu/'   
                 sh 'ansible-playbook /home/ubuntu/playbook.yaml -i /home/ubuntu/inventory.yaml'
             }
         }
