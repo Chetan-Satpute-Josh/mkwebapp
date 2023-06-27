@@ -8,11 +8,19 @@ pipeline
 
     stages 
     {
+        stage('Checkout') 
+        {
+            steps 
+            {
+                checkout scm
+            }
+        }
+
         stage('Build') 
         {
             steps 
             {
-                sh 'node --version'
+                sh 'ls'
             }
         }
         stage('Test') 
