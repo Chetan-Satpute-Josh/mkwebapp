@@ -37,7 +37,7 @@ pipeline
         {
             steps 
             {
-                echo 'Deploying....'
+                ansiblePlaybook(credentialsId: '/home/ubuntu/.ssh/private_key', inventory: '/home/ubuntu/inventory.yaml', playbook: '/home/ubuntu/playbook.yaml')           
             }
         }
     }
