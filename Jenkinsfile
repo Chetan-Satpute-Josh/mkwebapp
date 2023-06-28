@@ -39,6 +39,7 @@ pipeline
             {
                 // ansiblePlaybook(credentialsId: '/home/ubuntu/.ssh/private_key', inventory: '/home/ubuntu/inventory.yaml', playbook: '/home/ubuntu/playbook.yaml')        
                 sh 'pwd'
+                sh 'whoami'
                 sh 'ls /home/ubuntu/'   
                 sh 'cp /home/ubuntu/playbook.yml /home/ubuntu/inventory.yml .'
                 sh 'ansible-playbook playbook.yml -i inventory.yml'
