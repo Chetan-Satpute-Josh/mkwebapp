@@ -17,8 +17,8 @@
 
     - name: Copy build files to Nginx web root
       copy:
-        src: /var/lib/jenkins/workspace/ansible-pipeline
-        dest: /var/www/html
+        src: /var/lib/jenkins/workspace/ansible-pipeline/dist/
+        dest: /var/www/html/
 
     - name: Restart Nginx
       become: true
