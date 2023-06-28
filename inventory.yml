@@ -1,0 +1,8 @@
+---
+virtualmachines:
+  hosts:
+    vm01:
+      ansible_host: 13.232.169.149
+  vars:
+    ansible_user: ubuntu
+    ansible_ssh_private_key_file: /home/ubuntu/.ssh/ansible
