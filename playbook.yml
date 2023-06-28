@@ -19,9 +19,6 @@
       copy:
         src: /var/lib/jenkins/workspace/ansible-pipeline
         dest: /var/www/html
-        owner: nginx
-        group: nginx
-        mode: "0644"
 
     - name: Restart Nginx
       become: true
